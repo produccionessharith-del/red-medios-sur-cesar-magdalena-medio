@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./simple.css";
+import "./admin/admin.css";
 
 const siteTitle = "Red Regional de Medios | Sur del Cesar y Magdalena Medio";
 const siteDescription = "Red Regional de Medios de Comunicación del Sur del Cesar y Magdalena Medio. Noticias, televisión, radio y contenidos de nuestros medios asociados. Unidos por la información.";

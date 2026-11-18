@@ -16,13 +16,13 @@ npm run dev
 ```
 Abre http://localhost:3000.
 
-La portada y las páginas informativas funcionan como base visual. Las noticias, directorio, streaming y administración dinámica se conectarán en las siguientes etapas.
+La portada y las páginas informativas funcionan como base visual. El panel `/admin` ya incluye inicio de sesión con Supabase Auth. Las funciones de gestión y los permisos por medio se habilitarán después de configurar el primer administrador y las políticas RLS.
 
 ## 2. Crear Supabase
 1. Crea un proyecto nuevo en https://supabase.com/dashboard.
 2. Abre SQL Editor y ejecuta el contenido de `supabase/schema.sql`.
 3. En Project Settings > API, copia Project URL y la clave pública `anon`/publishable.
-4. Pega los valores en `.env.local`:
+4. El archivo `.env.local` incluido ya contiene los datos públicos que compartiste. Si necesitas configurarlo manualmente, pega los valores en `.env.local`:
 ```env
 NEXT_PUBLIC_SUPABASE_URL=https://TU-PROYECTO.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=TU_CLAVE_PUBLICA
@@ -53,7 +53,8 @@ git push -u origin main
 
 ## 5. Próximas etapas
 - Conectar las consultas de noticias y medios a Supabase.
-- Implementar inicio de sesión y permisos por medio.
+- Asignar el rol de administrador a la primera cuenta y aplicar políticas RLS seguras.
+- Implementar permisos por medio y las pantallas CRUD de noticias, eventos y medios.
 - Crear panel de administración completo.
 - Configurar Storage para logos, fotografías y archivos audiovisuales.
 - Integrar reproductores de radio y televisión según los enlaces de señal de cada medio.
