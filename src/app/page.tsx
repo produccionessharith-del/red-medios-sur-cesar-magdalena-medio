@@ -15,7 +15,7 @@ export default function Home() {
     <main>
       <div className="topbar"><div className="container topbar-inner"><span>Una región conectada por la información</span><span>Sur del Cesar · Magdalena Medio</span></div></div>
       <header className="header"><div className="container nav">
-        <Link href="/" className="brand"><img className="brand-logo" src="https://cdn.phototourl.com/member/2026-11-18-226194f5-f47a-467c-b39b-dc9df46a2ccb.png" alt="Logo de la Red Regional de Medios de Comunicación"/></Link>
+        <Link href="/" className="brand"><img className="brand-logo" src="/logo-red-regional.png" alt="Logo de la Red Regional de Medios de Comunicación"/></Link>
         <nav><Link href="/noticias">Noticias</Link><Link href="/medios">Nuestros medios</Link><Link href="/television">TV en vivo</Link><Link href="/radio">Radio</Link><Link href="/nosotros">Quiénes somos</Link></nav>
         <Link className="admin-link" href="/admin">Administrar <ArrowRight size={15}/></Link>
         <button className="menu" aria-label="Abrir menú"><Menu/></button>
@@ -31,7 +31,7 @@ export default function Home() {
         <div className="cards">{sections.map(({icon: Icon,title,desc,href},i)=><Link className="feature-card" href={href} key={title}><div className="card-number">0{i+1}</div><div className="feature-icon"><Icon size={24}/></div><h3>{title}</h3><p>{desc}</p><span className="card-arrow"><ArrowRight size={18}/></span></Link>)}</div>
       </div></section>
       <section className="join"><div className="container join-inner"><div><div className="section-kicker light">HAGAMOS PARTE DE ESTA HISTORIA</div><h2>Tu medio también<br/><em>tiene un lugar.</em></h2><p>Invitamos a canales, emisoras, periódicos y medios digitales a vincularse a esta red regional.</p></div><Link className="btn-light" href="/contacto">Vincular mi medio <ArrowRight size={17}/></Link></div></section>
-      <footer><div className="container footer-inner"><div className="brand footer-brand"><img className="brand-logo" src="https://cdn.phototourl.com/member/2026-11-18-226194f5-f47a-467c-b39b-dc9df46a2ccb.png" alt="Logo de la Red Regional de Medios de Comunicación"/></div><p>Conectando medios. Acercando comunidades.</p><span>© {new Date().getFullYear()} Red de Medios. Todos los derechos reservados.</span></div></footer>
+      <footer><div className="container footer-inner"><div className="brand footer-brand"><img className="brand-logo" src="/logo-red-regional.png" alt="Logo de la Red Regional de Medios de Comunicación"/></div><p>Conectando medios. Acercando comunidades.</p><span>© {new Date().getFullYear()} Red de Medios. Todos los derechos reservados.</span></div></footer>
     </main>
   );
 }
