@@ -27,6 +27,14 @@ export default function Home() {
         <div className="hero-actions"><Link className="btn-primary" href="/noticias">Explorar noticias <ArrowRight size={17}/></Link><Link className="btn-outline" href="/medios">Conocer los medios</Link></div>
       </div><div className="hero-bottom"><div className="container hero-bottom-inner"><span>PERIODISMO REGIONAL</span><span>INDEPENDENCIA · COMUNIDAD · INFORMACIÓN</span></div></div></section>
       <section className="intro container"><div><div className="section-kicker">UNIDOS POR LA INFORMACIÓN</div><h2>Una región.<br/><em>Muchas voces.</em></h2></div><p>Somos un espacio de encuentro para los medios de comunicación del Sur del Cesar y el Magdalena Medio. Visibilizamos el trabajo periodístico local y acercamos a las comunidades a la información de su territorio.</p></section>
+      <section className="events-section" id="proximos-eventos"><div className="container">
+        <div className="section-heading"><div><div className="section-kicker">AGENDA REGIONAL</div><h2>Próximos <em>eventos.</em></h2></div><span className="events-note">Conoce las actividades de nuestra región</span></div>
+        <div className="events-grid">
+          <a className="event-logo-card" href="https://cdn.phototourl.com/member/2026-11-18-7d446637-229a-4e10-ab0d-0141a8948642.jpg" target="_blank" rel="noreferrer" aria-label="Ver imagen del próximo evento en tamaño completo">
+            <img src="https://cdn.phototourl.com/member/2026-11-18-7d446637-229a-4e10-ab0d-0141a8948642.jpg" alt="Imagen promocional del próximo evento" />
+          </a>
+        </div>
+      </div></section>
       <section className="section-wrap"><div className="container"><div className="section-heading"><div><div className="section-kicker">EXPLORA LA RED</div><h2>Todo lo que pasa, <em>en un solo lugar.</em></h2></div><Link href="/medios" className="text-link">Ver toda la red <ArrowRight size={16}/></Link></div>
         <div className="cards">{sections.map(({icon: Icon,title,desc,href},i)=><Link className="feature-card" href={href} key={title}><div className="card-number">0{i+1}</div><div className="feature-icon"><Icon size={24}/></div><h3>{title}</h3><p>{desc}</p><span className="card-arrow"><ArrowRight size={18}/></span></Link>)}</div>
       </div></section>
