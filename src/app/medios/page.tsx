@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function Medios(){return <main className="simple-page"><Link href="/">← Inicio</Link><div className="section-kicker">QUIÉNES HACEN PARTE</div><h1>Nuestros medios</h1><p>Directorio de canales de televisión, emisoras, periódicos y medios digitales de la región.</p><p className="muted">Los perfiles de los medios se administrarán desde el panel central.</p></main>}

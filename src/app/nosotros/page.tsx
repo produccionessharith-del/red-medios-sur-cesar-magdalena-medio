@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function Nosotros(){return <main className="simple-page"><Link href="/">← Inicio</Link><div className="section-kicker">IDENTIDAD</div><h1>Quiénes somos</h1><p>La Red de Medios de Comunicación del Sur del Cesar y Magdalena Medio busca conectar, visibilizar y fortalecer el trabajo de los medios de comunicación de la región.</p></main>}

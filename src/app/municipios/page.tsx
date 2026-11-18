@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function Municipios(){return <main className="simple-page"><Link href="/">← Inicio</Link><div className="section-kicker">TERRITORIO</div><h1>Nuestra región</h1><p>Noticias e información organizadas por municipios del Sur del Cesar y el Magdalena Medio.</p></main>}

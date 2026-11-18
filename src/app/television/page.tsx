@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function Television(){return <main className="simple-page"><Link href="/">← Inicio</Link><div className="section-kicker">SEÑALES EN DIRECTO</div><h1>Televisión en vivo</h1><p>Próximamente encontrarás aquí las señales de televisión de nuestros medios asociados.</p></main>}

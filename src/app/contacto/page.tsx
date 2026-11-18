@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function Contacto(){return <main className="simple-page"><Link href="/">← Inicio</Link><div className="section-kicker">VINCULACIÓN Y ALIANZAS</div><h1>Contacto</h1><p>¿Tienes un medio de comunicación y quieres hacer parte de la Red? Próximamente habilitaremos el formulario de vinculación.</p></main>}

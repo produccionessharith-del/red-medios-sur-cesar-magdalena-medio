@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function Radio(){return <main className="simple-page"><Link href="/">← Inicio</Link><div className="section-kicker">SONIDOS DE NUESTRA REGIÓN</div><h1>Radio en vivo</h1><p>Próximamente encontrarás aquí las emisoras vinculadas a la Red.</p></main>}

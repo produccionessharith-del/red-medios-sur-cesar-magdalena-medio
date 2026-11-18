@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function Videos(){return <main className="simple-page"><Link href="/">← Inicio</Link><div className="section-kicker">CONTENIDO AUDIOVISUAL</div><h1>Programas y videos</h1><p>Entrevistas, reportajes, programas y producciones de los medios asociados.</p></main>}

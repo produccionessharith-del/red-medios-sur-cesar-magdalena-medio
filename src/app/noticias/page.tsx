@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function Noticias(){return <main className="simple-page"><Link href="/">← Inicio</Link><div className="section-kicker">ACTUALIDAD REGIONAL</div><h1>Noticias</h1><p>En esta sección aparecerán las noticias publicadas por los medios vinculados a la Red.</p><p className="muted">El listado dinámico se conectará a Supabase en la siguiente etapa.</p></main>}
